@@ -26,7 +26,7 @@ enum QRQuality {
 
 // settings for QR generator
 struct QRSettings {
-    QRSettings(std::string input) : text(input) {}
+    QRSettings(std::string input = "") : text(input) {}
 
     std::string text;
     QRQuality quality = QR_LOW;

@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icons/mainframe.png</file>
+        <file>icons/qr-light.ico</file>
+        <file>icons/add.png</file>
+        <file>icons/eraser.png</file>
+        <file>icons/information.png</file>
+        <file>icons/play.png</file>
+        <file>icons/save.png</file>
+        <file>icons/settings.png</file>
+        <file>icons/edit.png</file>
+        <file>icons/menu.png</file>
+        <file>icons/cancel.png</file>
+        <file>icons/minimize.png</file>
+    </qresource>
+    <qresource prefix="/style">
+        <file>style.qss</file>
+    </qresource>
+</RCC>

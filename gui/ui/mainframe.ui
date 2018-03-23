@@ -31,6 +31,10 @@
   <property name="windowTitle">
    <string>QR-Light</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../rc/mainframe.qrc">
+    <normaloff>:/icon/icons/mainframe.png</normaloff>:/icon/icons/mainframe.png</iconset>
+  </property>
   <property name="tabShape">
    <enum>QTabWidget::Rounded</enum>
   </property>
@@ -51,16 +55,22 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>-1</y>
+      <x>1</x>
+      <y>1</y>
       <width>501</width>
       <height>501</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item alignment="Qt::AlignLeft|Qt::AlignTop">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignTop">
         <widget class="QPushButton" name="m_menuBtn">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -70,14 +80,68 @@
          </property>
          <property name="maximumSize">
           <size>
-           <width>50</width>
-           <height>20</height>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">menu-indicator {
+    image: &quot;&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../rc/mainframe.qrc">
+           <normaloff>:/icon/icons/menu.png</normaloff>:/icon/icons/menu.png</iconset>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignTop">
+        <widget class="QPushButton" name="m_editBtn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
           </size>
          </property>
          <property name="text">
-          <string>PushButton</string>
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../rc/mainframe.qrc">
+           <normaloff>:/icon/icons/edit.png</normaloff>:/icon/icons/edit.png</iconset>
+         </property>
+         <property name="shortcut">
+          <string>Ctrl+E</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
          </property>
         </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
        <item>
         <spacer name="verticalSpacer">
@@ -94,6 +158,58 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item alignment="Qt::AlignTop">
+        <widget class="QPushButton" name="m_miniBtn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../rc/mainframe.qrc">
+           <normaloff>:/icon/icons/minimize.png</normaloff>:/icon/icons/minimize.png</iconset>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignTop">
+        <widget class="QPushButton" name="m_exitBtn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../rc/mainframe.qrc">
+           <normaloff>:/icon/icons/cancel.png</normaloff>:/icon/icons/cancel.png</iconset>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -125,9 +241,12 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>400</width>
-           <height>400</height>
+           <width>280</width>
+           <height>280</height>
           </size>
+         </property>
+         <property name="placeholderText">
+          <string>Type here...</string>
          </property>
         </widget>
        </item>
@@ -169,6 +288,8 @@
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../rc/mainframe.qrc"/>
+ </resources>
  <connections/>
 </ui>

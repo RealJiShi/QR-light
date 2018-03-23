@@ -1,0 +1,114 @@
+/*****Main Window*****/
+QWidget#MainWindow {
+    border: 1px solid rgb(50, 50, 50);
+    background: rgb(50, 50, 50);
+}
+
+QLabel#m_imgLabel {
+    background-color: rgb(30, 30, 30);
+}
+
+/*****Menu*****/
+QMenu {
+    background: rgb(50, 50, 50);
+    color: rgb(227, 234, 242);
+}
+
+QMenu::item {
+    background-color: transparent;
+    padding: 2px 25px 2px 20px;
+    border: 1px solid transparent;
+}
+
+QMenu::item::selected {
+    border-color: darkblue;
+    background: rgba(100, 100, 100, 150);
+}
+
+QMenu::separator {
+    height: 2px;
+    background: lightblue;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+/*****QTextEdit*****/
+QTextEdit {
+    background-color: rgba(30, 30, 30, 0.68);
+    color: rgb(230, 230, 230);
+    font-size: 18px;
+    border: 0px solid #000000;
+}
+
+QScrollBar:vertical {
+    height: 20px;
+    width: 8px;
+    background:rgba(0, 0, 0, 25%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top:9px;
+    padding-bottom:9px;
+}
+
+QScrollBar::handle:vertical {
+    min-height: 20px;
+    width: 8px;
+    background: rgb(80, 80, 80);
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+QScrollBar::handle:vertical:hover {
+    border-radius:4px;
+    background: rgb(100, 100, 100);
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    border-radius:4px;
+    background: transparent;
+}
+
+/*****QPushButton*****/
+QPushButton::menu-indicator{
+    image:None;
+}
+
+QPushButton:hover {
+  border: 2px solid green;
+}
+
+/*****QDialog*****/
+QDialog#OptionPanel {
+    color: rgb(230, 230, 230);
+    background: rgb(50, 50, 50);
+    border: 1px solid rgb(50, 50, 50);
+}
+
+/*****QLabel*****/
+QLabel {
+    background: rgb(50, 50, 50);
+    color: rgb(230, 230, 230);
+}
+
+/*****QGroupBox*****/
+QGroupBox {
+    background: rgb(50, 50, 50);
+    border: 2px solid gray;
+    border-radius: 5px;
+    color: rgb(230, 230, 230);
+    margin-top: 1ex; /* leave space at the top for the title */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+    padding: 0 3px;
+}
+
+/*****QRadioButton*****/
+QRadioButton {
+    color: rgb(230, 230, 230);
+    width: 13px;
+    height: 13px;
+}
